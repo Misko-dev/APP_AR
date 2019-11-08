@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_legend"
+    style="@style/AppTheme.Text.18PrimaryBold"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+
+    <TextView
+        style="@style/AppTheme.Text.18PrimaryBold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_weight="1"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        tools:text="LUN" />
+
+    <TextView
+        style="@style/AppTheme.Text.18PrimaryBold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textAllCaps="true"
+        tools:text="MAR" />
+
+    <TextView
+        style="@style/AppTheme.Text.18PrimaryBold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_weight="1"
+        android:background="?attr/colorPrimary"
+        android:gravity="center"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textAllCaps="true"
+        tools:text="MIE" />
+
+    <TextView
+        style="@style/AppTheme.Text.18PrimaryBold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_weight="1"
+        android:background="?attr/colorPrimary"
+        android:gravity="center"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textAllCaps="true"
+        tools:text="JUE" />
+
+    <TextView
+        style="@style/AppTheme.Text.18PrimaryBold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_weight="1"
+        android:background="?attr/colorPrimary"
+        android:gravity="center"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textAllCaps="true"
+        tools:text="VIE" />
+
+    <TextView
+        style="@style/AppTheme.Text.18PrimaryBold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        tools:text="SAB" />
+
+    <TextView
+        style="@style/AppTheme.Text.18PrimaryBold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textAllCaps="true"
+        tools:text="DOM" />
+
+</LinearLayout>

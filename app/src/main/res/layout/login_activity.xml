@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/background_gradient">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_ingresar_login"
+            style="@style/AppTheme.Button.FilledAccent"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="32dp"
+            android:text="Ingresar"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/txt_num4"
+            app:layout_constraintStart_toStartOf="@+id/txt_num1"
+            app:layout_constraintTop_toBottomOf="@+id/txt_num1" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/ic_login_bk"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_ar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="Autismo\nRancagua"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <EditText
+            android:id="@+id/txt_ema_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/bgedt"
+            android:ems="10"
+            android:hint="Correo"
+            android:inputType="textWebEmailAddress"
+            android:padding="10dp"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/plomo"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/txt_num4"
+            app:layout_constraintStart_toStartOf="@+id/txt_num1"
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+        <ImageView
+            android:id="@+id/btn_limpiar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_ema_login"
+            app:layout_constraintEnd_toEndOf="@+id/txt_ema_login"
+            app:layout_constraintTop_toTopOf="@+id/txt_ema_login"
+            app:srcCompat="@drawable/ic_cerrar"
+            android:tint="@color/colorAccent"
+            tools:ignore="VectorDrawableCompat" />
+
+        <EditText
+            android:id="@+id/txt_num1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bgedt"
+            android:gravity="center"
+            android:hint="0"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/plomo"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toStartOf="@+id/txt_num2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_ema_login" />
+
+        <EditText
+            android:id="@+id/txt_num2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bgedt"
+            android:gravity="center"
+            android:hint="0"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/plomo"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_num1"
+            app:layout_constraintEnd_toStartOf="@+id/txt_num3"
+            app:layout_constraintStart_toEndOf="@+id/txt_num1"
+            app:layout_constraintTop_toTopOf="@+id/txt_num1" />
+
+        <EditText
+            android:id="@+id/txt_num3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bgedt"
+            android:gravity="center"
+            android:hint="0"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/plomo"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_num2"
+            app:layout_constraintEnd_toStartOf="@+id/txt_num4"
+            app:layout_constraintStart_toEndOf="@+id/txt_num2"
+            app:layout_constraintTop_toTopOf="@+id/txt_num2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/txt_num4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bgedt"
+            android:gravity="center"
+            android:hint="0"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/plomo"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_num3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txt_num3"
+            app:layout_constraintTop_toTopOf="@+id/txt_num3" />
+
+        <TextView
+            android:id="@+id/btn_pass_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:text="¿Olvidaste tu contraseña?"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="@+id/btn_ingresar_login"
+            app:layout_constraintStart_toStartOf="@+id/btn_ingresar_login"
+            app:layout_constraintTop_toBottomOf="@+id/btn_ingresar_login" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
+    </ScrollView>

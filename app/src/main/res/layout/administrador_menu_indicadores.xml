@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_admin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bgitemxx"
+        android:elevation="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+        <Button
+            android:id="@+id/tx1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_btn_blue_primary"
+            android:text="Registrados"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/txt_total_adm"
+            app:layout_constraintStart_toEndOf="@+id/kpi_admin"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <EditText
+            android:id="@+id/txt_total_adm"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_input_edit"
+            android:clickable="false"
+            android:enabled="false"
+            android:inputType="text"
+            android:lines="1"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="@+id/tx1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tx1"
+            app:layout_constraintTop_toTopOf="@+id/tx1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/tx2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_btn_blue_primary"
+            android:text="Habilitados"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/kpi_admin"
+            app:layout_constraintEnd_toStartOf="@+id/txt_habilitados_adm"
+            app:layout_constraintStart_toEndOf="@+id/kpi_admin"
+            app:layout_constraintTop_toBottomOf="@+id/tx1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/txt_habilitados_adm"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_input_edit"
+            android:clickable="false"
+            android:enabled="false"
+            android:inputType="text"
+            android:lines="1"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="@+id/tx2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tx2"
+            app:layout_constraintTop_toTopOf="@+id/tx2" />
+
+        <com.timqi.sectorprogressview.ColorfulRingProgressView
+            android:id="@+id/kpi_admin"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:bgColor="@color/plomo"
+            app:fgColorEnd="@color/colorAccent"
+            app:fgColorStart="@color/colorAccentLight"
+            app:strokeWidth="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startAngle="0" />
+
+        <TextView
+            android:id="@+id/porcentaje_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:textColor="@color/colorAccent"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/kpi_admin"
+            app:layout_constraintEnd_toEndOf="@+id/kpi_admin"
+            app:layout_constraintStart_toStartOf="@+id/kpi_admin"
+            app:layout_constraintTop_toTopOf="@+id/kpi_admin" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Administradores"
+            android:textColor="@color/colorAccent"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/kpi_admin"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_prof"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bgitemxx"
+        android:elevation="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_admin"
+        tools:ignore="MissingConstraints">
+
+
+        <com.timqi.sectorprogressview.ColorfulRingProgressView
+            android:id="@+id/kpi_prof"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:bgColor="@color/plomo"
+            app:fgColorEnd="@color/colorAccent"
+            app:fgColorStart="@color/colorAccentLight"
+            app:strokeWidth="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startAngle="0" />
+
+        <Button
+            android:id="@+id/tx4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_btn_blue_primary"
+            android:text="Habilitados"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/kpi_prof"
+            app:layout_constraintEnd_toStartOf="@+id/txt_habilitados_pro"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/kpi_prof"
+            app:layout_constraintTop_toBottomOf="@+id/tx3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/txt_total_pro"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_input_edit"
+            android:clickable="false"
+            android:enabled="false"
+            android:inputType="text"
+            android:lines="1"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="@+id/tx3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tx3"
+            app:layout_constraintTop_toTopOf="@+id/tx3" />
+
+        <EditText
+            android:id="@+id/txt_habilitados_pro"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_input_edit"
+            android:clickable="false"
+            android:enabled="false"
+            android:inputType="text"
+            android:lines="1"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="@+id/tx4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tx4"
+            app:layout_constraintTop_toTopOf="@+id/tx4" />
+
+        <Button
+            android:id="@+id/tx3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_btn_blue_primary"
+            android:text="Registrados"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/txt_total_pro"
+            app:layout_constraintStart_toEndOf="@+id/kpi_prof"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/porcentaje_prof"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:textColor="@color/colorAccent"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/kpi_prof"
+            app:layout_constraintEnd_toEndOf="@+id/kpi_prof"
+            app:layout_constraintStart_toStartOf="@+id/kpi_prof"
+            app:layout_constraintTop_toTopOf="@+id/kpi_prof" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Profesionales"
+            android:textColor="@color/colorAccent"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/kpi_prof"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_niño"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bgitemxx"
+        android:elevation="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_prof"
+        tools:ignore="MissingConstraints">
+
+
+        <com.timqi.sectorprogressview.ColorfulRingProgressView
+            android:id="@+id/kpi_niño"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:bgColor="@color/plomo"
+            app:fgColorEnd="@color/colorAccent"
+            app:fgColorStart="@color/colorAccentLight"
+            app:strokeWidth="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startAngle="0" />
+
+        <Button
+            android:id="@+id/tx5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_btn_blue_primary"
+            android:text="Habilitados"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/kpi_niño"
+            app:layout_constraintEnd_toStartOf="@+id/txt_habilitados_niño"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/kpi_niño"
+            app:layout_constraintTop_toBottomOf="@+id/tx6"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/txt_total_niño"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_input_edit"
+            android:clickable="false"
+            android:enabled="false"
+            android:inputType="text"
+            android:lines="1"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="@+id/tx6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tx6"
+            app:layout_constraintTop_toTopOf="@+id/tx6" />
+
+        <Button
+            android:id="@+id/tx6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_btn_blue_primary"
+            android:text="Registrados"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/txt_total_niño"
+            app:layout_constraintStart_toEndOf="@+id/kpi_niño"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/porcentaje_niño"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:textColor="@color/colorAccent"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/kpi_niño"
+            app:layout_constraintEnd_toEndOf="@+id/kpi_niño"
+            app:layout_constraintStart_toStartOf="@+id/kpi_niño"
+            app:layout_constraintTop_toTopOf="@+id/kpi_niño" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Niños"
+            android:textColor="@color/colorAccent"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/kpi_niño"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txt_habilitados_niño"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_input_edit"
+            android:clickable="false"
+            android:enabled="false"
+            android:inputType="text"
+            android:lines="1"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="@+id/tx5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tx5"
+            app:layout_constraintTop_toTopOf="@+id/tx5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_tutor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/bgitemxx"
+        android:elevation="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_niño"
+        tools:ignore="MissingConstraints">
+
+
+        <com.timqi.sectorprogressview.ColorfulRingProgressView
+            android:id="@+id/kpi_tutor"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:bgColor="@color/plomo"
+            app:fgColorEnd="@color/colorAccent"
+            app:fgColorStart="@color/colorAccentLight"
+            app:strokeWidth="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startAngle="0" />
+
+        <Button
+            android:id="@+id/tx7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_btn_blue_primary"
+            android:text="Habilitados"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/kpi_tutor"
+            app:layout_constraintEnd_toStartOf="@+id/txt_habilitados_tutor"
+            app:layout_constraintStart_toEndOf="@+id/kpi_tutor"
+            app:layout_constraintTop_toBottomOf="@+id/tx8"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/txt_habilitados_tutor"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_input_edit"
+            android:clickable="false"
+            android:enabled="false"
+            android:inputType="text"
+            android:lines="1"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="@+id/tx7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tx7"
+            app:layout_constraintTop_toTopOf="@+id/tx7" />
+
+        <EditText
+            android:id="@+id/txt_total_tutor"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_input_edit"
+            android:clickable="false"
+            android:enabled="false"
+            android:inputType="text"
+            android:lines="1"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="@+id/tx8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tx8"
+            app:layout_constraintTop_toTopOf="@+id/tx8" />
+
+        <Button
+            android:id="@+id/tx8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_btn_blue_primary"
+            android:text="Registrados"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/txt_total_tutor"
+            app:layout_constraintStart_toEndOf="@+id/kpi_tutor"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/porcentaje_tutor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:textColor="@color/colorAccent"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/kpi_tutor"
+            app:layout_constraintEnd_toEndOf="@+id/kpi_tutor"
+            app:layout_constraintStart_toStartOf="@+id/kpi_tutor"
+            app:layout_constraintTop_toTopOf="@+id/kpi_tutor" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Tutores"
+            android:textColor="@color/colorAccent"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/kpi_tutor"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

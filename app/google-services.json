@@ -1,0 +1,159 @@
+{
+  "project_info": {
+    "project_number": "26608932994",
+    "firebase_url": "https://autismorancagua-f8417.firebaseio.com",
+    "project_id": "autismorancagua-f8417",
+    "storage_bucket": "autismorancagua-f8417.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26608932994:android:fbcd37627727754a",
+        "android_client_info": {
+          "package_name": "cl.app.ar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "26608932994-g1uinppe49kl7fmc6iingapr1n608hvp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cl.app.ar",
+            "certificate_hash": "5add3c0e6760076f25a728014bff9d94d04d5ba4"
+          }
+        },
+        {
+          "client_id": "26608932994-vgqcbm2atghuc0i7lfilane30otqo14l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqxoIVH3hKovVWX6YHac9hKmc1c3JeOeI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "26608932994-vgqcbm2atghuc0i7lfilane30otqo14l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26608932994:android:b452ddd114dfd07cc6bc9b",
+        "android_client_info": {
+          "package_name": "cl.app.autismo_rancagua"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "26608932994-3m7cvbebu1jichestsp57tea1d49o8ln.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cl.app.autismo_rancagua",
+            "certificate_hash": "5add3c0e6760076f25a728014bff9d94d04d5ba4"
+          }
+        },
+        {
+          "client_id": "26608932994-vgqcbm2atghuc0i7lfilane30otqo14l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqxoIVH3hKovVWX6YHac9hKmc1c3JeOeI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "26608932994-vgqcbm2atghuc0i7lfilane30otqo14l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26608932994:android:b20c924eea9a76b8",
+        "android_client_info": {
+          "package_name": "com.example.firestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "26608932994-rieauo6jlv2quvdb3qe2ph0jj6l1vv9e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firestore",
+            "certificate_hash": "5add3c0e6760076f25a728014bff9d94d04d5ba4"
+          }
+        },
+        {
+          "client_id": "26608932994-vgqcbm2atghuc0i7lfilane30otqo14l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqxoIVH3hKovVWX6YHac9hKmc1c3JeOeI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "26608932994-vgqcbm2atghuc0i7lfilane30otqo14l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26608932994:android:fdd43358e58e3645",
+        "android_client_info": {
+          "package_name": "com.example.omkar.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "26608932994-gl1ia6rdkijp5124ce8ddoeqj1akorhr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.omkar.android",
+            "certificate_hash": "5add3c0e6760076f25a728014bff9d94d04d5ba4"
+          }
+        },
+        {
+          "client_id": "26608932994-vgqcbm2atghuc0i7lfilane30otqo14l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqxoIVH3hKovVWX6YHac9hKmc1c3JeOeI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "26608932994-vgqcbm2atghuc0i7lfilane30otqo14l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

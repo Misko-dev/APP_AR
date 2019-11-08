@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomCalendar">
+        <attr name="cellSize" format="integer"  />
+    </declare-styleable>
+
+
+    <!--Algunos Attr con TimetableView-->
+    <declare-styleable name="TimetableView">
+
+        <!--Semana actual-->
+        <attr name="cur_week" format="integer"/>
+
+        <!--Semestre actual-->
+        <attr name="cur_term" format="string"/>
+
+        <!--
+           Especifique un nombre de método que cumpla los siguientes requisitos:
+            1. El valor de retorno es una colección.
+            2. Cada objeto en la colección implementa la interfaz ScheduleEnable.
+            -->
+        <attr name="source" format="string"/>
+
+        <!--
+           Especifique un nombre de método que cumpla los siguientes requisitos:
+            1. El valor de retorno es List <Schedule>
+            -->
+        <attr name="data" format="string"/>
+
+        <!--Margen superior del elemento del curso.-->
+        <attr name="mar_top" format="dimension"/>
+
+        <!--Margen izquierdo-->
+        <attr name="mar_left" format="dimension"/>
+
+        <!--Altura del curso-->
+        <attr name="item_height" format="dimension"/>
+
+        <!--Curvatura redondeada del curso de esta semana.-->
+        <attr name="thisweek_corner" format="dimension"/>
+
+        <!--Curvatura redondeada no semanal-->
+        <attr name="nonweek_corner" format="dimension"/>
+
+        <!--El elemento más grande en la barra lateral.-->
+        <attr name="max_slide_item" format="integer"/>
+
+        <!--Si mostrar cursos no semanales-->
+        <attr name="show_notcurweek" format="boolean"/>
+
+        <attr name="onWeekChanged" format="string"/>
+
+        <attr name="onItemClicked" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="PerWeekView">
+        <!--Radio de punto-->
+        <attr name="radius" format="dimension"/>
+
+        <!--Color brillante-->
+        <attr name="light_color" format="color"/>
+
+        <!--Color oscuro-->
+        <attr name="gray_color" format="color"/>
+
+    </declare-styleable>
+
+
+
+    <declare-styleable name="SwipeRevealLayout">
+        <attr name="dragEdge">
+            <flag name="left" value="1" />
+            <flag name="right" value="2" />
+            <flag name="top" value="4" />
+            <flag name="bottom" value="8" />
+        </attr>
+
+        <attr name="mode">
+            <enum name="normal" value="0" />
+            <enum name="same_level"   value="1" />
+        </attr>
+
+        <attr name="flingVelocity" format="integer" />
+
+        <attr name="minDistRequestDisallowParent" format="dimension" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cl.app.autismo_rancagua">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning,InnerclassSeparator">
+        <activity android:name=".Vista.Mantenedores.Sesion.HorarioActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".Vista.Menus.Administrador.EventosAdministrador" android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".Vista.Mantenedores.CuentasAdministrador.RGCuentasAdministrador"
+            tools:ignore="InnerclassSeparator"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".Vista.Mantenedores.CuentasAdministrador.MCuentasAdministrador"
+            tools:ignore="InnerclassSeparator"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".Vista.Menus.Profesional.MenuProfesional"
+            tools:ignore="InnerclassSeparator"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".Vista.Menus.Administrador.MenuAdministrador"
+            tools:ignore="InnerclassSeparator"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".Vista.UI.Login"
+            tools:ignore="InnerclassSeparator"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".Vista.UI.Principal"
+            tools:ignore="InnerclassSeparator"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Vista.Mantenedores.Niño.MNiño" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".Vista.Mantenedores.CuentasProfesional.RGCuentasProfesional" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".Vista.Mantenedores.CuentasProfesional.MCuentasProfesional" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".Vista.Mantenedores.Niño.RGNiño" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".Vista.Mantenedores.Niño.SeleccionarColegio" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".Vista.Mantenedores.Niño.SeleccionarEducacion" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".Vista.Mantenedores.Niño.SeleccionarTutor" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".Vista.Mantenedores.Tutor.MTutor" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".Vista.Mantenedores.Tutor.RGTutor" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".Vista.Mantenedores.Profesional.RGProfesional" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".Vista.Mantenedores.Profesional.MProfesional" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".Vista.Mantenedores.Profesional.SeleccionarCargo" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".Vista.Mantenedores.Administrador.SeleccionarCargoAdministrador" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".Vista.Mantenedores.Administrador.RGAdministrador" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".Vista.Mantenedores.Administrador.MAdministrador" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".Vista.Mantenedores.Evento.MEvento" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".Vista.Mantenedores.Evento.RGEvento" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".Vista.Mantenedores.Sesion.RGSesion" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".Vista.Mantenedores.Sesion.NiñosParticipantes"  android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".Vista.Mantenedores.Sesion.SeleccionarNiños" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".Vista.Mantenedores.Sesion.AsistenciaParticipantes"  android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".Vista.Mantenedores.Sesion.AsistenciasParticipante"  android:windowSoftInputMode="adjustResize"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,144 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraintLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:background="@drawable/bgitemxx"
+    android:elevation="6dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/foto_perfil">
+
+    <ImageView
+        android:id="@+id/btn_eventos"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_evento"
+        app:layout_constraintEnd_toStartOf="@+id/btn_indicador"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cargo2" />
+
+    <ImageView
+        android:id="@+id/btn_mantenedores"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_mantenedor"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cuenta"
+        app:layout_constraintStart_toEndOf="@+id/btn_indicador"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cargo2" />
+
+    <ImageView
+        android:id="@+id/btn_cuenta"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_cuenta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_mantenedores"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cargo2" />
+
+    <ImageView
+        android:id="@+id/btn_indicador"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_indicador"
+        app:layout_constraintEnd_toStartOf="@+id/btn_mantenedores"
+        app:layout_constraintStart_toEndOf="@+id/btn_eventos"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cargo2" />
+
+    <TextView
+        android:id="@+id/txt_cargo2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Menu principal"
+        android:textColor="@color/colorAccent"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Eventos"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_eventos"
+        app:layout_constraintStart_toStartOf="@+id/btn_eventos"
+        app:layout_constraintTop_toBottomOf="@+id/btn_eventos"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Personal"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btn_mantenedores"
+        app:layout_constraintStart_toStartOf="@+id/btn_mantenedores"
+        app:layout_constraintTop_toBottomOf="@+id/btn_mantenedores" />
+
+    <TextView
+        android:id="@+id/txt_subtitulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Metricas"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_indicador"
+        app:layout_constraintStart_toStartOf="@+id/btn_indicador"
+        app:layout_constraintTop_toBottomOf="@+id/btn_indicador" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:text="Cuenta"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_cuenta"
+        app:layout_constraintStart_toStartOf="@+id/btn_cuenta"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cuenta" />
+</androidx.constraintlayout.widget.ConstraintLayout>

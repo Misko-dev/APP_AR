@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:background="@drawable/bgheader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/transparente">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:background="@color/transparente">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparente">
+
+
+                <ImageView
+                    android:id="@+id/btn_desconectar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/txt_nombre"
+                    app:layout_constraintTop_toTopOf="@+id/txt_nombre"
+                    app:srcCompat="@drawable/ic_desconectar"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/foto_perfil"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:src="@color/colorPrimary"
+                    app:civ_border_color="#fff"
+                    app:civ_border_width="2dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_nombre"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/blanco"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_desconectar"
+                    app:layout_constraintStart_toEndOf="@+id/foto_perfil"
+                    app:layout_constraintTop_toTopOf="@+id/foto_perfil" />
+
+                <TextView
+                    android:id="@+id/txt_cargo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:textColor="@color/blanco"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_desconectar"
+                    app:layout_constraintStart_toEndOf="@+id/foto_perfil"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_nombre" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <include layout="@layout/administrador_menu"
+                android:id="@+id/menu_principal"/>
+
+            <include
+                android:id="@+id/menu_personas"
+                layout="@layout/administrador_menu_personas"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/menu_indicadores"
+                layout="@layout/administrador_menu_indicadores"
+                android:visibility="gone" />
+
+            <include layout="@layout/administrador_ayuda"
+                android:id="@+id/menu_ayuda"/>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>
+
+
+
